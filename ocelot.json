@@ -15,6 +15,20 @@
             ]
         },
         {
+            "DownstreamPathTemplate": "/provider/{anything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5116
+                }
+            ],
+            "UpstreamPathTemplate": "/provider/{anything}",
+            "UpstreamHttpMethod": [
+                "Get", "Post", "Put", "Delete"
+            ]
+        },
+        {
             "DownstreamPathTemplate": "/users",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
